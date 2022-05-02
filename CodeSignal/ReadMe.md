@@ -24,4 +24,6 @@
     itemsSet = [1,2,3]
     tempSet = itemsSet.copy() -> create new list instance with same data to itemsSet
     tempSet.pop(i) -> remove item at i in list
+    13. init 2D array  with value 0
+    arr2D = [[0 for i in range(n)] for j in range(n)] or [[0] * n for i in range(n)]
     
