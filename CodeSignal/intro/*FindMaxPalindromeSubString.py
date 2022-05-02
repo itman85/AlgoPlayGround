@@ -4,7 +4,7 @@ for ex string s = "abcdeabcecbaeaefffdf"
 return "abcecba"
 '''
 
-# O(n^2)
+# O(n^2), can use suffix array to improve O(N*logN)
 def solution(s):
     mlo, mup = 0, 0
     n = len(s)
