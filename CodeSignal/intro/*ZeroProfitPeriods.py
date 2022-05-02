@@ -72,12 +72,13 @@ def solution(transactions):
 def solution2(transactions):
     sumN = [0] * len(transactions)
     sumN[0] = transactions[0]
-    f = [0] * len(transactions)  # f[i] is max zero profile periods from 0 to i
+    f = [0] * len(
+        transactions)  # f[i] is max zero profile periods from 0 to i, f[i] = max(f[i-1],f[j]+1) with j < i where sumN[j] = sumN[i]
     f[0] = int(transactions[0] == 0)
     d = {transactions[0]: 0}  # key is sum from 0 to i, value is index i
     # O(n)
     for i in range(1, len(transactions)):
-        sumN[i] = sumN[i - 1] + transactions[i]
+        sumN[i] = sumN[i - 1] + transactions[i]  # sumN[i] = sum(transactions[:i])
 
     # O(n*logn)
     for i in range(1, len(transactions)):
