@@ -40,6 +40,7 @@ if si + a[i+1] = sj  1 <= j < i
 '''
 
 
+
 def findInList(lst, fi):
     for i in range(len(lst)):
         if lst[i] == fi:
