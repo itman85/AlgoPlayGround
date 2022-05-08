@@ -12,6 +12,6 @@ solution(n, m) = 2.
 So the answer is 2^1 = 2.
 '''
 
-
+# tips: -(~(n ^ m)) = ((n ^ m) + 1)
 def solution(n, m):
     return ~(n ^ m) & -(~(n ^ m))  # or ~(n ^ m) & ((n ^ m) + 1)
