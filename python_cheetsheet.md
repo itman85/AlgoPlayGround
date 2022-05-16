@@ -12,7 +12,7 @@
     [int(x) for x in str(123)]
 6. string.split('char or string') return list, regex split re.split('[^a-zA-Z]',text) return list of words
 7. char.isdigit(), isalpha(), islower(), isupper(), ...
-8. sorted(list)
+8. sorted(list) sort ASC, sorted(list,reverse = True) sort DES
 9. max with key: len, int. E.X find max digit in number:
     n = 123445
     print(max([i for i in str(n)],key=int)) <=> max([int(i) for i in str(n)])
@@ -31,6 +31,12 @@
     all({0 : "Apple", 1 : "Orange"}) -> False because first key is false (0 is false in boolean, != 0 is true in boolean)
     For dictionaries the all() function checks the keys, not the values
 15. min,max,sum,sorted for items in list,tuple,set, keys for dict
-16. Set operators: set1&set2, set1|set2, set1-set2, set1^set2
+16. Set operators: set1&set2, set1|set2, set1-set2, set1^set2 (Note: set1|set2 = (set1&set2) | (set1^set2))
 17. init Dict: dict1 = {0:"Zero",1:"One"}; dict({0: "Zero", 1: "One"}); dict([[0, "Zero"], [1, "One"]]); dict([(0, "Zero"), (1, "One")]); (list/tuple must have 2 items only (item 1 is key, item 2 is value))
     dict(zip([0, 1], ["Zero", "One"]))
+18. The any() function return True if one if items in an iterable is True, otherwise it will return False
+    any([True,False,False]) -> True
+    any([False,False,False]) -> False
+19. n.bit_length() return number of bits. e.x 50.bit_length() = 6
+20. convert string number in base x to decimal number int(s,x)
+21. lst = [1,2,3,4,5,6]; a, *lst, b = lst => a = 1, b= 6, lst = [2,3,4,5]
