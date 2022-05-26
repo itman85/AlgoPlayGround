@@ -40,3 +40,6 @@
 19. n.bit_length() return number of bits. e.x 50.bit_length() = 6
 20. convert string number in base x to decimal number int(s,x)
 21. lst = [1,2,3,4,5,6]; a, *lst, b = lst => a = 1, b= 6, lst = [2,3,4,5]
+22. comprehension, lamba
+23. Lists Concatenation: list1 + list2, [*list1,*list2], list1.extend(list2)
+24. enumerate: list(enumerate([1, 11, 13, 6, 14])) => [(0, 1), (1, 11), (2, 13), (3, 6), (4, 14)] list of tuple (index,value)

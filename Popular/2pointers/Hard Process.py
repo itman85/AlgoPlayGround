@@ -26,6 +26,7 @@ Output
 
 '''
 
+
 # O(n)
 def solution(a, k):
     l, maxl, maxr = 0, 0, 0
@@ -44,5 +45,5 @@ def solution(a, k):
     return maxr - maxl + 1, a
 
 
-maxLen, a1 = solution([1, 0, 0, 1, 0, 1, 0, 1, 0, 1], 2)
+maxLen, a1 = solution([1, 1, 1, 1, 1, 0, 0], 1)
 print(f"{maxLen}\n{a1}")
