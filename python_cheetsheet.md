@@ -2,7 +2,7 @@
     chr(97) -> 'a'
     ord('a') -> 97
 2. reverse string/list st[::-1], st[i:j] : substring, sub list from i -> j-1, st[-1]: last item of string or list
-3. sum boolean (True = 1, False = 0) e.x: sum([True,False,True,True])  = 3
+3. sum boolean (True = 1, False = 0) e.x: sum([True,False,True,True])  = 3 or can use bool as index 0,1 e.x [10,20][False] = 10, [10,20][True] = 20
 4. init set,list,typle from string
     str1 = "cabca"
     print(set(str1))  >>> {'c', 'b', 'a'}
@@ -43,3 +43,5 @@
 22. comprehension, lamba
 23. Lists Concatenation: list1 + list2, [*list1,*list2], list1.extend(list2)
 24. enumerate: list(enumerate([1, 11, 13, 6, 14])) => [(0, 1), (1, 11), (2, 13), (3, 6), (4, 14)] list of tuple (index,value)
+25. List remove item at index base 0 or -1: list.pop(index), del list[index], remove many items: del list[start:stop:step], remove by value list.remove(value)
+26. sum of digits of a number n = sum(map(int,str(n)))
